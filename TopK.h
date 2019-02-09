@@ -66,7 +66,7 @@ bool TopK<T>::push(const T &value)
 	{
 		//the value need to insert heap
 		array_[0] = value;
-		heapify(k_);
+		build_heap(k_,0);
 	}
 	return true;
 }
